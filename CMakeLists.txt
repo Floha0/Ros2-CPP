@@ -21,14 +21,14 @@ ament_target_dependencies(radio rclcpp example_interfaces)
 add_executable(smartphone src/smartphone.cpp)
 ament_target_dependencies(smartphone rclcpp example_interfaces)
 
-add_executable(draw_circle src/draw_circle.cpp)
-ament_target_dependencies(draw_circle rclcpp geometry_msgs turtlesim)
+add_executable(find_distance src/find_distance.cpp)
+ament_target_dependencies(find_distance rclcpp geometry_msgs turtlesim)
 
 install (TARGETS
   cpp_node
   radio
   smartphone
-  draw_circle
+  find_distance
   DESTINATION lib/${PROJECT_NAME}
 )
 
